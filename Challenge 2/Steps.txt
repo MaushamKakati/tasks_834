@@ -1,0 +1,5 @@
+1) Create powershell script 'instance_metadata.ps1' script in VM
+
+2) Execute the below commands to fetch instance metadata:
+	a) .\instance_metadata.ps1 - To fetch all metadata of the VM
+	b) .\instance_metadata.ps1 <filter metadata condition> - To fetch filtered metadata of the VM (e.g. .\instance_metadata.ps1 /compute)
