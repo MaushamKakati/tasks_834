@@ -9,7 +9,7 @@ def getValue(x: dict, key: str):
     #print(x, key)
     if (key in x.keys()):
         #print('x[key]=',x[key])
-        if type(x[key] is dict):
+        if type(x[key]) is dict:
             return getValue(x[key],getKey(x[key]))
         else:
             return x[getKey(x)]
