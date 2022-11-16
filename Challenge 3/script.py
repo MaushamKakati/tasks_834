@@ -12,7 +12,7 @@ def getValue(x: dict, key: str):
         if type(x[key]) is dict:
             return getValue(x[key],getKey(x[key]))
         else:
-            return x[getKey(x)]
+            return x[key]
     else:
         currentKey=getKey(x)
         #print('currentKey=',currentKey)
